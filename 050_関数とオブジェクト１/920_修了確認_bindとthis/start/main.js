@@ -24,7 +24,7 @@ const person = {
      */
     
 }
-
+ssss
 /**
  * 問題１：
  * 1秒後に"hello Tom"
