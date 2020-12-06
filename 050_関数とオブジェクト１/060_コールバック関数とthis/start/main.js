@@ -7,3 +7,10 @@ const person = {
     }
 }
 person.hello();
+
+function fn(ref) {
+    ref();
+}
+
+// メソッドを他の変数に代入しているのと同じで、ここのthisはwindowオブジェクトを参照
+fn(person.hello);
