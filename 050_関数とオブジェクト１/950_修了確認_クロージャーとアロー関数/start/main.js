@@ -1,40 +1,47 @@
-/**
- * 以下のコードはクロージャーのレクチャーで作成したコードです。
- * これをアロー関数を用いてなるべく短くなるように記載してみてください。
- * 
- * 問題１：
- * addNumberFactoryを短く書き直してみましょう。
- */
-function addNumberFactory(num) {
-    function addNumber(value) {
-        return num + value;
-    }
-    return addNumber;
-}
+// /**
+//  * 以下のコードはクロージャーのレクチャーで作成したコードです。
+//  * これをアロー関数を用いてなるべく短くなるように記載してみてください。
+//  * 
+//  * 問題１：
+//  * addNumberFactoryを短く書き直してみましょう。
+//  */
+// function addNumberFactory(num) {
+//     function addNumber(value) {
+//         return num + value;
+//     }
+//     return addNumber;
+// }
 
-const add5 = addNumberFactory(5);
-const result = add5(10);
-console.log(result);
+// const addNUmberFactory = num => value => num + value;
 
-/**
- * 問題２：
- * incrementFactoryを短く書き直してみましょう。
- */
-function incrementFactory() {
+
+// const add5 = addNumberFactory(5);
+// const result = add5(10);
+// console.log(result);
+
+// /**
+//  * 問題２：
+//  * incrementFactoryを短く書き直してみましょう。
+//  */
+// const incrementFactory = () => {
     
-    let num = 0;
+//     let num = 0;
 
-    function a() {
-        num = num + 1;
-        console.log(num);
-    }
+//     return () => {
+//         num = num + 1;
+//         console.log(num);
+//     }
+// }
 
-    return a;
-}
+// const increment = incrementFactory();
 
-const increment = incrementFactory();
+// increment();
+// increment();
+// increment();
+// increment();
 
-increment();
-increment();
-increment();
-increment();
+
+let target = document.getElementById("target");
+let text = target.textContent;
+console.log(target);
+console.log(text);
