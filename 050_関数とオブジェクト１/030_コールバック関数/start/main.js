@@ -12,3 +12,10 @@ function fn(cb) {
 
 fn(hello);
 fn(bye);
+
+fn(function() {
+  console.log("name");
+})
+
+
+setTimeout(hello, 2000);

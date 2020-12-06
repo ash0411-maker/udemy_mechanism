@@ -12,7 +12,7 @@ const person = {
     }
 }
 
-// setTimeout(/** ここに追記 */, 1000);
+setTimeout(person.hello(), 1000);
 
 /**
  * 問題２：
@@ -63,34 +63,34 @@ obj.greeting = function() {
  * 
  * ※コールバック関数を用いて実装してください。
  */
-function calcFactory(val) {
-    return {
-        plus: function(target) {
-            const newVal = val + target;
-            console.log(`${val} + ${target} = ${newVal}`);
-            val = newVal;
-        },
-        minus: function(target) {
-            const newVal = val - target;
-            console.log(`${val} - ${target} = ${newVal}`);
-            val = newVal;
-        },
-        multiply: function(target) {
-            const newVal = val * target;
-            console.log(`${val} x ${target} = ${newVal}`);
-            val = newVal;
-        },
-        divide: function(target) {
-            const newVal = val / target;
-            console.log(`${val} / ${target} = ${newVal}`);
-            val = newVal;
-        }
-    };
-}
+// function calcFactory(val) {
+//     return {
+//         plus: function(target) {
+//             const newVal = val + target;
+//             console.log(`${val} + ${target} = ${newVal}`);
+//             val = newVal;
+//         },
+//         minus: function(target) {
+//             const newVal = val - target;
+//             console.log(`${val} - ${target} = ${newVal}`);
+//             val = newVal;
+//         },
+//         multiply: function(target) {
+//             const newVal = val * target;
+//             console.log(`${val} x ${target} = ${newVal}`);
+//             val = newVal;
+//         },
+//         divide: function(target) {
+//             const newVal = val / target;
+//             console.log(`${val} / ${target} = ${newVal}`);
+//             val = newVal;
+//         }
+//     };
+// }
 
-const calc = calcFactory(10);
-calc.plus(5); 
-calc.minus(3); 
-calc.multiply(3);
-calc.divide(2);
+// const calc = calcFactory(10);
+// calc.plus(5); 
+// calc.minus(3); 
+// calc.multiply(3);
+// calc.divide(2);
 
